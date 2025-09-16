@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Chant</title>
+    <title>Unity WebGL Player | MergeGameEdgeOne</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
+<<<<<<< HEAD
+      <canvas id="unity-canvas" width=1600 height=900 tabindex="-1"></canvas>
+=======
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+>>>>>>> c8d1c1bf9542eae7be53586406181a830a68a76c
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +24,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Chant</div>
+        <div id="unity-build-title">MergeGameEdgeOne</div>
       </div>
     </div>
     <script>
@@ -57,14 +61,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Chant-github.loader.js";
+      var loaderUrl = buildUrl + "/MergeGame-WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Chant-github.data",
-        frameworkUrl: buildUrl + "/Chant-github.framework.js",
-        codeUrl: buildUrl + "/Chant-github.wasm",
+        dataUrl: buildUrl + "/MergeGame-WebGL.data",
+        frameworkUrl: buildUrl + "/MergeGame-WebGL.framework.js",
+        codeUrl: buildUrl + "/MergeGame-WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Chant",
+        productName: "MergeGameEdgeOne",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -103,8 +107,13 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+<<<<<<< HEAD
+        canvas.style.width = "1600px";
+        canvas.style.height = "900px";
+=======
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+>>>>>>> c8d1c1bf9542eae7be53586406181a830a68a76c
       }
 
       loadingBar.style.display = "block";
